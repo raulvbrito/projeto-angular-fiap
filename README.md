@@ -1,27 +1,45 @@
-# ProjetoAngular
+# Projeto Angular - FIAP
+PWA baseada em Angular e Firebase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.1.
+## Instalação
 
-## Development server
+Depois de clonar o projeto, execute os seguintes comando na pasta raiz do projeto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Instalação da CLI do Angular
+```sh
+npm install -g @angular/cli
+```
 
-## Code scaffolding
+- Instalação das dependências do projeto
+```sh
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Compilação da aplicação
+```sh
+ng build
+```
 
-## Build
+- Inicialização da aplicação localmente
+```sh
+ng serve -o
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Funcionalidades
 
-## Running unit tests
+- **Autenticação:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  - Usuário deve estar autenticado para prosseguir com a naveção da aplicação;
+  - Caso não esteja, é exibida a tela de Login para que o realize através do seu email e senha;
+  - Caso não tenha login, é possível cadastrar-se;
+  - Uma vez logado, o usuário segue para a tela de listagem de usuários.
 
-## Running end-to-end tests
+- **Usuários:**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+  - Tela de Listagem de Usuários é exibida caso usuário esteja autenticado;
+  - É possível filtrar pelo nome do usuário, cadastrar um novo e editar um existente;
+  - Também existe a possibilidade de exclusão de usuário cadastrado.
+  
+ ## Demo		
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Teste esse app através do seguinte link [ProjetoAngular](https://projeto-angular-246bb.web.app)
