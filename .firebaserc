@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "projeto-angular-246bb"
+  },
+  "targets": {
+    "projeto-angular-246bb": {
+      "hosting": {
+        "projeto-angular": [
+          "projeto-angular-246bb"
+        ]
+      }
+    }
+  }
+}
